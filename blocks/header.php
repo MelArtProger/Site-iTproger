@@ -7,7 +7,7 @@
   </div>
   <div id="about">
     <a href="http://itproger:8888/ad" title="Узнать детальнее об рекламе">Реклама</a>
-    <a href="#" title="Написать нам письмо">Обратная связь</a>
+    <a href="http://itproger:8888/kontakti" title="Написать нам письмо">Обратная связь</a>
   </div>
   <div id="reg_auth">
     <a href="#" title="Войти в кабинет пользователя">

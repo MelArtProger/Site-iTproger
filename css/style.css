@@ -9,6 +9,7 @@ font-family: 'Suez One', serif; */
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body, html {
@@ -187,6 +188,30 @@ header>div#logo>a>span {
 }
 
 #btn {
+  float: right;
+  margin-right: 3%;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: rgba(236, 101, 80, 1);
+  text-shadow: #454545 0 0 2px;
+  border-bottom: 4px solid rgba(217, 91, 72, 1);
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+  border-bottom: 2px solid rgba(217, 91, 72, 1);
+  margin-top: 7px;
+}
+
+.btn:active {
+  border-bottom: 0;
+  margin-top: 9px;
+}
+
+.btn {
   float: right;
   margin-right: 3%;
   margin-top: 5px;

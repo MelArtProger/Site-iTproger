@@ -6,7 +6,7 @@
   <div id="footer_menu">
     <a href="http://itproger:8888/ad" title="Узнать детали об рекламе">Реклама</a>
     <a href="#" title="Поддержать проект">Поддержка проекта</a>
-    <a href="#" title="Написать письмо">Обратная связь</a>
+    <a href="http://itproger:8888/kontakti" title="Написать письмо">Обратная связь</a>
   </div>
   <div id="rights">
     <a href="#">Все права защищены &copy; <?=date('Y')?></a>

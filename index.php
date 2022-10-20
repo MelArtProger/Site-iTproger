@@ -11,7 +11,7 @@
   <meta name="description" content="Описание сайта писать тут, улучшает поиск поисковиков">
   <!-- Ключевые слова для сайта -->
   <meta name="keywords" content="Ключевые слова">
-  <title>Тестовый сайт</title>
+  <title>iTProger</title>
   <!-- Вставить логотип -->
   <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
@@ -106,13 +106,3 @@
 </body>
 
 </html>
-
-<!-- Подключение к удаленному серверу .htaccess -->
-<!-- <IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteBase /
-  RewriteCond %(HTTP_HOST) ^www.itproger.com
-  RewriteRule (.*) https://itproger.com/$1 [R=301,L]
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-  RewriteRule ^index\.php$ https://itproger.com/ [R=301,L]
-</IfModule> -->
