@@ -20,6 +20,11 @@ body {
   background-color: #f6f6f6;
 }
 
+ul, ol {
+  width: 90%;
+  margin-left: 5%;
+}
+
 a {
   color: #fa713e;
   text-decoration: none;

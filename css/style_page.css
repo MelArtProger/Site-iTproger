@@ -1,6 +1,6 @@
-main {
+#news>a>#btn {
+  margin-bottom: 20px;
   float: left;
-  margin-top: 20px;
 }
 
 .article {
@@ -27,143 +27,6 @@ main {
   float: left;
   text-align: center;
   color: #333;
-}
-
-#news>a>#btn {
-  margin-bottom: 20px;
-  float: left;
-}
-
-#news {
-  float: left;
-}
-
-aside {
-  float: left;
-  margin-top: 20px;
-}
-
-#courses {
-  float: left;
-  width: 90%;
-}
-
-.course {
-  width: 100%;
-  margin-bottom: 10px;
-  float: left;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.2em;
-  color: #646464;
-}
-
-.course>img {
-  border: 2px solid #dfdfdf;
-  border-radius: 5px;
-  width: 35%;
-  float: left;
-  margin-right: 10px;
-}
-
-.course>span {
-  float: right;
-  font-weight: bold;
-  color: rgba(236, 101, 80, 1);
-}
-
-#courses>a>#btn {
-  float: left;
-}
-
-#one_course {
-  float: left;
-  margin-top: 10px;
-}
-
-#one_course>img {
-  width: 80%;
-  float: left;
-}
-
-.heading {
-  font-weight: lighter;
-  font-size: 1.4em;
-  font-family: 'Roboto Slab', serif;
-  border-bottom: 2px solid #db6e6e;
-  float: left;
-  color: #4f4f4f;
-  padding: 0px 5px;
-}
-
-.heading::first-letter {
-  color: #db6e6e;
-}
-
-@media (min-width: 1000px) {
-  main {
-    width: 60%;
-    margin-left: 3%;
-  }
-
-  aside {
-    width: 30%;
-    margin-left: 2%;
-  }
-
-  #news {
-    margin-left: 10%;
-    width: 90%;
-  }
-}
-
-@media (max-width: 999px) and (min-width: 910px){
-  main {
-    width: 65%;
-    margin-left: 2%;
-  }
-
-  aside {
-    width: 32%;
-  }
-
-  #news {
-    margin-left: 4%;
-    width: 96%;
-  }
-}
-
-@media (max-width: 909px) and (min-width: 500px){
-  main {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  aside {
-    width: 50%;
-    margin-left: 25%;
-  }
-
-  #news {
-    margin-left: 4%;
-    width: 96%;
-  }
-}
-
-@media (max-width: 499px){
-  main {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  aside {
-    width: 80%;
-    margin-left: 10%;
-  }
-
-  #news {
-    margin-left: 4%;
-    width: 96%;
-  }
 }
 
 @media (min-width: 1190px) {
@@ -237,24 +100,6 @@ aside {
 
 @media (max-width: 349px) {
   #news>a>#btn {
-    margin-left: 10% !important;
-  }
-}
-
-@media (min-width: 600px) {
-  #courses>a>#btn {
-    margin-left: 30%;
-  }
-}
-
-@media (max-width: 599px) and (min-width: 350px) {
-  #courses>a>#btn {
-    margin-left: 20% !important;
-  }
-}
-
-@media (max-width: 349px) {
-  #courses>a>#btn {
     margin-left: 10% !important;
   }
 }

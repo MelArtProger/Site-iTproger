@@ -1,2 +1,9 @@
 ServerSignature off
 AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteRule ^index?$ index.php [NC,L]
+  RewriteRule ^ad?$ ad.php [NC,L]
+</IfModule>

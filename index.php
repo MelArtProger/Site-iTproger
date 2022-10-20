@@ -1,3 +1,5 @@
+<!-- Подключаем протокол HTTPS blocks/head.php-->
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -14,60 +16,15 @@
   <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_page.css">
+  <link rel="stylesheet" href="css/aside.css">
 </head>
 
 <body>
   <div id="wrapper">
     <div id="content">
-      <header>
-        <div id="logo">
-          <a href="#" title="На главную">
-            <img src="img/logo.png" title="Тестовый сайт" alt="Тестовый сайт">
-            <span>ItProgger</span>
-          </a>
-        </div>
-        <div id="about">
-          <a href="#" title="Узнать детальнее об рекламе">Реклама</a>
-          <a href="#" title="Написать нам письмо">Обратная связь</a>
-        </div>
-        <div id="reg_auth">
-          <a href="#" title="Войти в кабинет пользователя">
-            <div id="btn">
-              Войти
-            </div>
-          </a>
-          <a href="#" title="Зарегистрироваться на сайте">
-            <div id="btn">
-              Регистрация
-            </div>
-          </a>
-        </div>
-      </header>
-
-      <nav>
-        <div id="menuShow"><i class="fa-solid fa-bars"></i></div>
-        <div id="hideMenu">
-          <a href="#">IT новости</a>
-          <a href="#">Видео курсы</a>
-          <a href="#">Сайты на заказ</a>
-          <a href="#">Форум</a>
-          <a href="#">IT задачи</a>
-        </div>
-        <div id="search">
-          <span>Поиск</span>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div id="mobileMenu">
-          <a href="#">IT новости</a><br>
-          <a href="#">Видео курсы</a><br>
-          <a href="#">Сайты на заказ</a><br>
-          <a href="#">Форум</a><br>
-          <a href="#">IT задачи</a>
-          <hr>
-          <a href="#">Регистрация</a>
-          <a href="#">Войти</a>
-        </div>
-      </nav>
+      <?php
+        require_once 'blocks/header.php';
+       ?>
 
       <main>
         <div id="news">
@@ -91,34 +48,9 @@
         </div>
       </main>
 
-      <aside>
-        <div id="courses">
-          <h2 class="heading">Видеокурсы</h2>
-          <div style="clear: both"><br></div>
-          <!-- Курс -->
-          <?php
-            for ($i=0; $i < 4; $i++)
-              echo '
-                <div class="course">
-                  <img src="https://i.pinimg.com/originals/60/17/da/6017da3ed8f203fe979b16dae1ad2259.png" alt="test" title="test">
-                  Разработка на <em>VUE.JS</em>
-                  <span>23 урока</span>
-                </div>
-                <div style="clear: both"><br></div>
-              ';
-            ?>
-          <a href="#" title="Посмотреть все видеокурсы">
-            <div id="btn">
-              Все видеокурсы
-            </div>
-          </a>
-        </div>
-        <div id="one_course">
-          <h2 class="heading">Как сверстать сайт?</h2>
-          <div style="clear: both"><br></div>
-          <img src="https://i.pinimg.com/originals/60/17/da/6017da3ed8f203fe979b16dae1ad2259.png" alt="test" title="test">
-        </div>
-      </aside>
+      <?php
+        require_once 'blocks/aside.php';
+       ?>
 
       <div style="clear: both"><br></div>
 
@@ -129,11 +61,11 @@
         <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
         <div id="vk_groups"></div>
         <script type="text/javascript">
-          VK.Widgets.Group("vk_groups", {mode: 3, width: 500, height: 100, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 212320395);
+          VK.Widgets.Group("vk_groups", {mode: 3, width: 400, height: 200, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 212320395);
         </script>
         <div style="clear: both"><br></div>
         <!-- Telegram -->
-        <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="tproger_web/3284" data-width="700" data-userpic="true"></script>
+        <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="tproger_web/3284" data-width="400" data-userpic="true"></script>
       </div>
 
       <div id="sub_to_project">
@@ -161,29 +93,11 @@
           </div>
         </a>
       </div>
-      
+
     </div>
-    <footer>
-      <div id="site_name">
-        <span>ItProger</span> - сообщество программистов!
-      </div>
-      <div id="clear"></div>
-      <div id="footer_menu">
-        <a href="#" title="Узнать детали об рекламе">Реклама</a>
-        <a href="#" title="Поддержать проект">Поддержка проекта</a>
-        <a href="#" title="Написать письмо">Обратная связь</a>
-      </div>
-      <div id="rights">
-        <a href="#">Все права защищены &copy; <?=date('Y')?></a>
-      </div>
-      <div id="social">
-        <a href="#" title="Группа VK"><i class="fa-brands fa-vk"></i></a>
-        <a href="#" title="Канал Telegram"><i class="fa-brands fa-telegram"></i></a>
-        <a href="#" title="Группа FaceBook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" title="Канал YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" title="Google+"><i class="fa-brands fa-google-plus-g"></i></a>
-      </div>
-    </footer>
+    <?php
+      require_once 'blocks/footer.php';
+     ?>
   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
