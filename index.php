@@ -21,7 +21,7 @@
     <div id="content">
       <header>
         <div id="logo">
-          <a href="#" title="На главную">gg
+          <a href="#" title="На главную">
             <img src="img/logo.png" title="Тестовый сайт" alt="Тестовый сайт">
             <span>ItProgger</span>
           </a>
@@ -73,7 +73,6 @@
         <div id="news">
           <h2 class="heading">iT новости</h2>
           <div style="clear: both"><br></div>
-
           <!-- Статья -->
           <?php
             for ($i=0; $i < 6; $i++)
@@ -120,9 +119,50 @@
           <img src="https://i.pinimg.com/originals/60/17/da/6017da3ed8f203fe979b16dae1ad2259.png" alt="test" title="test">
         </div>
       </aside>
-      <div style="clear: both"><br></div>
-    </div>
 
+      <div style="clear: both"><br></div>
+
+      <div id="subscribe">
+        <span>Подпишитесь, чтобы быть в курсе всех новостей</span>
+        <div style="clear: both"><br></div>
+        <!-- VK -->
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+        <div id="vk_groups"></div>
+        <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 3, width: 500, height: 100, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 212320395);
+        </script>
+        <div style="clear: both"><br></div>
+        <!-- Telegram -->
+        <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="tproger_web/3284" data-width="700" data-userpic="true"></script>
+      </div>
+
+      <div id="sub_to_project">
+        <span class="heading">Подписаться на проект</span>
+        <div style="clear: both"><br></div>
+        <p>Чтобы получить доступ ко всем функциям сайта оформите подписку на проект</p>
+        <a href="#" title="Посмотреть информация о подписке на проект">
+          <div id="btn">
+            Узнать детальнее о подписке
+          </div>
+        </a>
+        <div style="clear: both"><br></div>
+        <h2 class="heading">Создание онлайн магазина</h2>
+        <div style="clear: both"><br></div>
+        <img src="https://i.pinimg.com/originals/60/17/da/6017da3ed8f203fe979b16dae1ad2259.png" alt="test" title="test">
+      </div>
+
+      <div style="clear: both"><br></div>
+
+      <div id="web_sites">
+        <span>Хотите создать сайт?</span>
+        <a href="#" title="Заказать сайт">
+          <div id="btn">
+            Заказать сайт
+          </div>
+        </a>
+      </div>
+      
+    </div>
     <footer>
       <div id="site_name">
         <span>ItProger</span> - сообщество программистов!
